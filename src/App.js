@@ -1,11 +1,13 @@
-import Header from "./component/header/Header";
-import TopBar from "./topBar/TopBar";
+import Home from "./component/pages/home/Home";
+import Single from "./component/pages/single/Single";
+import TopBar from "./component/topBar/TopBar";
 
 function App() {
   return (
     <div className="App">
-     <TopBar></TopBar>
-     <Header></Header>
+      <TopBar></TopBar>
+     {/* <Home></Home> */}
+     <Single></Single>
     </div>
   );
 }

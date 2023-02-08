@@ -10,8 +10,8 @@ const SinglePost = () => {
            <h1 className="singlePostTitle">
             Lorem, ipsum dolor.
             <div className="singlePostEdit">
-            <i class="singlePostIcon fa-regular fa-pen-to-square"></i>
-            <i class="singlePostIcon fa-solid fa-trash"></i>
+            <i className="singlePostIcon fa-regular fa-pen-to-square"></i>
+            <i className="singlePostIcon fa-solid fa-trash"></i>
             </div>
            </h1>
            <div className="singlePostInfo">

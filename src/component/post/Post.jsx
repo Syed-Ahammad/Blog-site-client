@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./post.css";
 
 const Post = () => {
@@ -18,8 +19,9 @@ const Post = () => {
             Lorem ipsum dolor sit amet consectetur.
         </span>
         <hr />
-        <span className="postDate">1 hr ago</span>
-        <p className="postDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?</p>
+        <span className="postDate">1 hour ago</span>
+       <Link className="link" to={'/single/:asf'}>
+       <p className="postDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?</p></Link>
       </div>
     </div>
   );

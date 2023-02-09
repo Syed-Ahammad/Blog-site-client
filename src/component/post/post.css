@@ -27,6 +27,7 @@
     font-weight: 700;
     font-size: 24px;
     margin-top: 15px;
+    text-transform: capitalize;
     cursor: pointer;
 }
 .postDate{

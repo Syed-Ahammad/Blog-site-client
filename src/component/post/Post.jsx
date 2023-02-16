@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./post.css";
 
-const Post = () => {
+const Post = ({post}) => {
   return (
     <div className="post">
       <img
@@ -16,12 +16,12 @@ const Post = () => {
             <span className="postCat">Life</span>
         </div>
         <span className="postTitle">
-            Lorem ipsum dolor sit amet consectetur.
+            {post.title}
         </span>
         <hr />
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
        <Link className="link" to={'/single/:asf'}>
-       <p className="postDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?orem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat amet nisi soluta reprehenderit quas odit placeat vero, atque omnis minima, consectetur sapiente consequuntur, nihil tempora possimus excepturi incidunt culpa?</p></Link>
+       <p className="postDesc">{post.dese}</p></Link>
       </div>
     </div>
   );
